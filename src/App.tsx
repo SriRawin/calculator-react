@@ -3,7 +3,7 @@ import { Box, Grid } from "@mui/material";
 import NumericButton from "./compnents/NumericButton";
 
 function App() {
-  const handleButtonClick = (digit: number) => {
+  const onClickNumbericButton = (digit: number) => {
     console.log(digit);
   };
   // const [count, setCount] = useState(0);
@@ -31,43 +31,43 @@ function App() {
           <Grid>
             <NumericButton
               digit={9}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
             <NumericButton
               digit={6}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
             <NumericButton
               digit={3}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
           </Grid>
           <Grid>
             <NumericButton
               digit={8}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
             <NumericButton
               digit={5}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
             <NumericButton
               digit={2}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
           </Grid>
           <Grid>
             <NumericButton
               digit={7}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
             <NumericButton
               digit={4}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
             <NumericButton
               digit={1}
-              onClick={handleButtonClick}
+              onClick={onClickNumbericButton}
             ></NumericButton>
           </Grid>
         </Grid>
