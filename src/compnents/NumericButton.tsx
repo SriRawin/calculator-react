@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+
 import React from "react";
 
 interface NumericButtonProps {
@@ -9,21 +9,12 @@ interface NumericButtonProps {
 const NumericButton: React.FC<NumericButtonProps> = (props) => {
   return (
     <div>
-      <Button
-        sx={{
-          height: 50,
-          width: 50,
-          backgroundColor: "red",
-          borderRadius: 10,
-        }}
-        onClick={() => {
+  
+
+        {/* onClick={() => {
           props.onClick(props.digit);
-        }}
-      >
-        <Typography variant="body1" color={"white"}>
-          {props.digit}
-        </Typography>
-      </Button>
+        }} */}
+
     </div>
   );
 };

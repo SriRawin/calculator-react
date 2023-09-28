@@ -1,78 +1,19 @@
-import "./App.css";
-import { Box, Grid } from "@mui/material";
-import NumericButton from "./compnents/NumericButton";
+// import NumericButton from "./compnents/NumericButton";
 
 function App() {
-  const onClickNumbericButton = (digit: number) => {
-    console.log(digit);
-  };
+  // const onClickNumbericButton = (digit: number) => {
+  //   console.log(digit);
+  // };
   // const [count, setCount] = useState(0);
+  // #202226
+  // #2A2C30
   return (
-    <>
-      <h1>Calculator</h1>
-      <Box
-        sx={{
-          height: 650,
-          width: 400,
-          backgroundColor: "#202226",
-          borderRadius: 3,
-        }}
-      >
-        <br></br>
-        <Box
-          sx={{
-            height: 150,
-            backgroundColor: "#2A2C30",
-            marginX: 3,
-            borderRadius: 3,
-          }}
-        ></Box>
-        <Grid container spacing={2}>
-          <Grid>
-            <NumericButton
-              digit={9}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-            <NumericButton
-              digit={6}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-            <NumericButton
-              digit={3}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-          </Grid>
-          <Grid>
-            <NumericButton
-              digit={8}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-            <NumericButton
-              digit={5}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-            <NumericButton
-              digit={2}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-          </Grid>
-          <Grid>
-            <NumericButton
-              digit={7}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-            <NumericButton
-              digit={4}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-            <NumericButton
-              digit={1}
-              onClick={onClickNumbericButton}
-            ></NumericButton>
-          </Grid>
-        </Grid>
-      </Box>
-    </>
+    <div class=" flex flex-col items-center justify-start h-screen w-screen">
+      <div class="h-5"></div>
+      <p class="font-Montserrat text-6xl font-bold">Calculator</p>
+      <div class="h-5"></div>
+      <div class="bg-[#202226] h-96 w-96 rounded-lg"> </div>
+    </div>
   );
 }
 
